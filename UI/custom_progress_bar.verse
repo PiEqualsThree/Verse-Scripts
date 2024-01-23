@@ -1,3 +1,11 @@
+#   * * * * * * * * * * * * * * * * * * * * * * * * *
+#   * Script by: PiEqualsThree                      *
+#   * https://www.youtube.com/@piequalsthree3       *
+#   * https://twitter.com/PiEqualsThreeVP           *
+#   *                                               *    
+#   *                                               *
+#   * * * * * * * * * * * * * * * * * * * * * * * * *
+
 using { /Fortnite.com/Devices }
 using { /Fortnite.com/UI }
 using { /Verse.org/Simulation }
