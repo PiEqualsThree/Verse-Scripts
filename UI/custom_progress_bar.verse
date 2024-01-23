@@ -1,5 +1,6 @@
 #   * * * * * * * * * * * * * * * * * * * * * * * * *
 #   * Script by: PiEqualsThree                      *
+#   * Published on 1/22/2024                        *
 #   * https://www.youtube.com/@piequalsthree3       *
 #   * https://twitter.com/PiEqualsThreeVP           *
 #   *                                               *    
@@ -36,7 +37,7 @@ custom_progress_bar := class:
 
     # IMPORTANT: Call this before using the progress bar, otherwise it won't work lol
     # Block is transacts so that's why a manual Init method is required :/ 
-    Init<public>() : void =
+    Init<public>() : overlay  =
         TextBlockProgress.SetTextOpacity(0.5)
         TextBlockProgress.SetText(StringToText("0%"))
         ColorBlockBG.SetDesiredSize(vector2{ X := XSize, Y := YSize})
@@ -84,7 +85,7 @@ custom_progress_bar := class:
                 HorizontalAlignment := horizontal_alignment.Center
                 VerticalAlignment := vertical_alignment.Center
         )
-
+        return OuterOverlay
     # Sets the progress bar to InProgress Percentage
     SetProgress<public>(InProgress : float) : void =
         NewProgressUpdatePolledEvent.Signal()
