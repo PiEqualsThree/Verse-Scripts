@@ -9,6 +9,7 @@
 
 using { /Fortnite.com/Devices }
 using { /Fortnite.com/UI }
+using { /Verse.org/Concurrency }
 using { /Verse.org/Simulation }
 using { /Verse.org/Colors }
 using { /UnrealEngine.com/Temporary/SpatialMath }
@@ -86,6 +87,7 @@ custom_progress_bar := class:
                 VerticalAlignment := vertical_alignment.Center
         )
         return OuterOverlay
+        
     # Sets the progress bar to InProgress Percentage
     SetProgress<public>(InProgress : float) : task(void) =
         NewProgressUpdatePolledEvent.Signal()
