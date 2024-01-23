@@ -87,7 +87,7 @@ custom_progress_bar := class:
         )
         return OuterOverlay
     # Sets the progress bar to InProgress Percentage
-    SetProgress<public>(InProgress : float) : void =
+    SetProgress<public>(InProgress : float) : task(void) =
         NewProgressUpdatePolledEvent.Signal()
         set ProgressPercent = InProgress
         # Clamp Progres Percent to 0-100%
