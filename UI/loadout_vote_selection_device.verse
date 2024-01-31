@@ -37,16 +37,8 @@ loadout_vote_selection_device := class(creative_device):
     var RowsToUse : int = 1
     # PUT YOUR TEXTURES HERE, IN THE ORDER OF LAYOUT!! :D
     Textures : []texture = array:
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
-        UITextures.PumpShotgun
+        <# TexturePath #>
+        <# TexturePath #>
     
     VoteEndedEvent<private> : event() = event(){} # Signaled when voting period has ended
     PlayerSelectionEvent<private> : event(button_selection_result) = event(button_selection_result){} # Signaled when player has made their selection
