@@ -122,7 +122,7 @@ loadout_vote_selection_device := class(creative_device):
                     Widget := ConstructLoadoutStackBox(Index, Button, Loadout.Name )
                     HorizontalAlignment := horizontal_alignment.Center
                     VerticalAlignment := vertical_alignment.Center
-                    Padding := margin{ Left := ImageSize.X * 0.15 , Right := ImageSize.X * 0.15}
+                    Padding := margin{ Left := ImageSize.X * 0.075 , Right := ImageSize.X * 0.075}
             )
             
             if ( Mod[Index, Columns] = Columns - 1):
